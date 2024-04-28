@@ -1,0 +1,25 @@
+2024-04-21 17:23:37,156 [1] INFO  Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-21 17:23:37,453 [1] INFO  Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager - Creating key {33e2f7c4-0b0f-4b9b-ae4d-e37c444338c4} with creation date 2024-04-21 15:23:37Z, activation date 2024-04-21 15:23:37Z, and expiration date 2024-07-20 15:23:37Z.
+2024-04-21 17:23:37,467 [1] INFO  Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository - Writing data to file 'C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys\key-33e2f7c4-0b0f-4b9b-ae4d-e37c444338c4.xml'.
+2024-04-21 17:23:37,573 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44376/swagger - -
+2024-04-21 17:23:37,953 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44376/swagger/index.html - -
+2024-04-21 17:23:38,000 [7] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44376/swagger - - - 301 - - 429.1102ms
+2024-04-21 17:23:38,074 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44376/swagger/index.html - - - 200 - text/html;charset=utf-8 120.9319ms
+2024-04-21 17:23:38,084 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44376/_framework/aspnetcore-browser-refresh.js - -
+2024-04-21 17:23:38,085 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44376/swagger/swagger-ui.css - -
+2024-04-21 17:23:38,093 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44376/_vs/browserLink - -
+2024-04-21 17:23:38,106 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44376/swagger/swagger-ui-standalone-preset.js - -
+2024-04-21 17:23:38,109 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44376/swagger/swagger-ui-bundle.js - -
+2024-04-21 17:23:38,119 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44376/_framework/aspnetcore-browser-refresh.js - - - 200 13774 application/javascript;+charset=utf-8 38.1776ms
+2024-04-21 17:23:38,147 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-04-21 17:23:38,147 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-04-21 17:23:38,147 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-04-21 17:23:38,155 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44376/swagger/swagger-ui.css - - - 200 144929 text/css 76.1406ms
+2024-04-21 17:23:38,162 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44376/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 65.1408ms
+2024-04-21 17:23:38,179 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44376/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 81.2721ms
+2024-04-21 17:23:38,214 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44376/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 126.3211ms
+2024-04-21 17:23:38,348 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44376/swagger/v1/swagger.json - -
+2024-04-21 17:23:38,369 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/2 GET https://localhost:44376/swagger/favicon-32x32.png - -
+2024-04-21 17:23:38,372 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-04-21 17:23:38,378 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44376/swagger/favicon-32x32.png - - - 200 628 image/png 7.2725ms
+2024-04-21 17:23:38,555 [.NET ThreadPool Worker] INFO  Microsoft.AspNetCore.Hosting.Diagnostics - Request finished HTTP/2 GET https://localhost:44376/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 207.1480ms

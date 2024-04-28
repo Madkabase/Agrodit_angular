@@ -1,0 +1,31 @@
+<div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+
+    <mat-card fxFlex.gt-xs="100" class="mb15">
+        <mat-card-title>{{isEditMode?'Edit':'Add'}} Spatial_Ref_Sys</mat-card-title>
+        <mat-card-content>
+            <form [formGroup]="spatial_ref_sysform" novalidate (ngSubmit)="confirmSubmit()">
+                
+                 <mat-form-field class="full-width">
+<input type="text" matInput formControlName="auth_name" id="auth_name" class="form-control" placeholder="auth_name" [(ngModel)]="data.auth_name" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="auth_srid" id="auth_srid" class="form-control" placeholder="auth_srid" [(ngModel)]="data.auth_srid" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="text" matInput formControlName="srtext" id="srtext" class="form-control" placeholder="srtext" [(ngModel)]="data.srtext" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="text" matInput formControlName="proj4text" id="proj4text" class="form-control" placeholder="proj4text" [(ngModel)]="data.proj4text" />
+</mat-form-field>
+
+
+                <div fxLayoutGap="20px">
+                    <button mat-raised-button color="primary" type="submit" [disabled]="!spatial_ref_sysform.valid">Save</button>
+                    <button mat-raised-button color="accent" type="button" tabindex="-1"
+                        [routerLink]="['/spatial_ref_sys']">Cancel</button>
+                </div>
+
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

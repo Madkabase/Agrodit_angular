@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "m+o8ImC9gUcem/kW9PvVTCaGR2m65M3EKpKWBobp/Ho=",
+  "Source": "Agrodit_angular.API",
+  "BasePath": "_content/Agrodit_angular.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Agrodit_angular.API\\wwwroot",
+      "Source": "Agrodit_angular.API",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\Generator\\MSSQLToRESTAPIAndAngularAppGeneratorV1.0\\GeneratorToolV1.0\\Agrodit_angular\\VSSolution\\Agrodit_angular\\Agrodit_angular.API\\wwwroot\\",
+      "BasePath": "_content/Agrodit_angular.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Agrodit_angular.API.props" />
+</Project>

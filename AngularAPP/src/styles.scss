@@ -1,0 +1,85 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import './scss/material';
+@import './scss/utils';
+@import './scss/responsive';
+@import './scss/variables';
+@import './scss/theme';
+
+html, body, #app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+html {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+body {
+  padding: 1rem;
+  overflow: auto;
+}
+
+.mat-elevation-z8 {    
+    overflow-x: auto;
+   }
+   
+.icon-lg {
+    font-size: 40px;
+  }
+  
+  .mat-card {
+    &.danger {
+      background: linear-gradient(60deg, #ec407a, #d81b60);
+    }
+    &.warn {
+      background: linear-gradient(60deg, #ffa726, #fb8c00);
+    }
+    &.success {
+      background: linear-gradient(60deg, #66bb6a, #43a047);
+    }
+    &.info {
+      background: linear-gradient(60deg, #26c6da, #00acc1);
+    }
+  }
+  .full-width {
+    width: 100%;
+  }
+
+  .action-button {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    opacity: 0.7;
+  }
+
+  .action-button:hover {
+    opacity: 1;
+  }
+
+  .action-button.edit {
+    background-color: #008cba; /* Blue */
+  }
+  .action-button.update {
+    background-color: #4caf50; /* Green */
+  }
+
+  .action-button.delete {
+    background-color: #f44336; /* Red */
+  }
+
+  .action-button.cancel {
+    background-color: #e7e7e7; /* Gray */
+    color: black;
+  }

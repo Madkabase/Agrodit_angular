@@ -1,0 +1,39 @@
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>Companies</mat-card-title>
+    <button mat-flat-button color="primary" (click)="onBtExport()">Export to Excel (Only for AG-Grid Enterprise) </button>&nbsp; &nbsp; 
+    <button mat-flat-button color="accent" (click)="restoreFilterModel()">Reset</button> &nbsp;&nbsp;
+    <button mat-flat-button color="primary" [routerLink]="['/Companies/add']">Add New</button>
+  </mat-card-header>
+  <mat-card-content>
+
+    <ag-grid-angular
+    style="width: 100%;"
+    class="ag-theme-material"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [suppressColumnVirtualisation]="true"
+    [suppressRowVirtualisation]="true"
+    (onPaginationChanged)="onPaginationChanged($event)"
+    [rowData]="dataSource"
+    [editType]="editType"
+    [rowSelection]="rowSelection"
+    [suppressClickEdit]="true"
+    [alwaysShowHorizontalScroll]="true"
+    [alwaysShowVerticalScroll]="true"
+    [frameworkComponents]="frameworkComponents"
+    [rowModelType]="rowModelType"
+    [cacheBlockSize]="cacheBlockSize"
+    [cacheOverflowSize]="cacheOverflowSize"
+    [maxConcurrentDatasourceRequests]="maxConcurrentDatasourceRequests"
+    [infiniteInitialRowCount]="infiniteInitialRowCount"
+    [maxBlocksInCache]="maxBlocksInCache"
+    (filterChanged)="onFilterChanged($event)"
+    (sortChanged)="onSortChanged($event)"
+    (gridReady)="onGridReady($event)"
+    ></ag-grid-angular>
+
+  </mat-card-content>
+</mat-card>
+

@@ -1,0 +1,67 @@
+<div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+
+    <mat-card fxFlex.gt-xs="100" class="mb15">
+        <mat-card-title>{{isEditMode?'Edit':'Add'}} Devices</mat-card-title>
+        <mat-card-content>
+            <form [formGroup]="devicesform" novalidate (ngSubmit)="confirmSubmit()">
+                
+                 <mat-form-field class="full-width">
+<input type="text" matInput formControlName="Name" id="Name" class="form-control" placeholder="Name" [(ngModel)]="data.Name" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="text" matInput formControlName="DevEUI" id="DevEUI" class="form-control" placeholder="DevEUI" [(ngModel)]="data.DevEUI" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="text" matInput formControlName="JoinEUI" id="JoinEUI" class="form-control" placeholder="JoinEUI" [(ngModel)]="data.JoinEUI" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="text" matInput formControlName="AppKey" id="AppKey" class="form-control" placeholder="AppKey" [(ngModel)]="data.AppKey" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="CalibrationMoisture1Max" id="CalibrationMoisture1Max" class="form-control" placeholder="CalibrationMoisture1Max" [(ngModel)]="data.CalibrationMoisture1Max" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="CalibrationMoisture1Min" id="CalibrationMoisture1Min" class="form-control" placeholder="CalibrationMoisture1Min" [(ngModel)]="data.CalibrationMoisture1Min" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="CalibrationMoisture2Max" id="CalibrationMoisture2Max" class="form-control" placeholder="CalibrationMoisture2Max" [(ngModel)]="data.CalibrationMoisture2Max" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="CalibrationMoisture2Min" id="CalibrationMoisture2Min" class="form-control" placeholder="CalibrationMoisture2Min" [(ngModel)]="data.CalibrationMoisture2Min" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="CalibrationSalinity1Max" id="CalibrationSalinity1Max" class="form-control" placeholder="CalibrationSalinity1Max" [(ngModel)]="data.CalibrationSalinity1Max" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="CalibrationSalinity1Min" id="CalibrationSalinity1Min" class="form-control" placeholder="CalibrationSalinity1Min" [(ngModel)]="data.CalibrationSalinity1Min" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="CalibrationSalinity2Max" id="CalibrationSalinity2Max" class="form-control" placeholder="CalibrationSalinity2Max" [(ngModel)]="data.CalibrationSalinity2Max" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="CalibrationSalinity2Min" id="CalibrationSalinity2Min" class="form-control" placeholder="CalibrationSalinity2Min" [(ngModel)]="data.CalibrationSalinity2Min" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="Location" id="Location" class="form-control" placeholder="Location" [(ngModel)]="data.Location" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="Id" id="Id" class="form-control" placeholder="Id" [(ngModel)]="data.Id" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="text" matInput formControlName="Status" id="Status" class="form-control" placeholder="Status" [(ngModel)]="data.Status" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="CompanyId" id="CompanyId" class="form-control" placeholder="CompanyId" [(ngModel)]="data.CompanyId" />
+</mat-form-field>
+
+
+                <div fxLayoutGap="20px">
+                    <button mat-raised-button color="primary" type="submit" [disabled]="!devicesform.valid">Save</button>
+                    <button mat-raised-button color="accent" type="button" tabindex="-1"
+                        [routerLink]="['/devices']">Cancel</button>
+                </div>
+
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

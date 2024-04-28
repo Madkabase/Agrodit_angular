@@ -1,0 +1,58 @@
+<div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-around stretch">
+
+    <mat-card fxFlex.gt-xs="100" class="mb15">
+        <mat-card-title>{{isEditMode?'Edit':'Add'}} Thresholds</mat-card-title>
+        <mat-card-content>
+            <form [formGroup]="Thresholdsform" novalidate (ngSubmit)="confirmSubmit()">
+                
+                 <mat-form-field class="full-width">
+<input type="number" matInput formControlName="Moisture1Min" id="Moisture1Min" class="form-control" placeholder="Moisture1Min" [(ngModel)]="data.Moisture1Min" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="Moisture1Max" id="Moisture1Max" class="form-control" placeholder="Moisture1Max" [(ngModel)]="data.Moisture1Max" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="Moisture2Min" id="Moisture2Min" class="form-control" placeholder="Moisture2Min" [(ngModel)]="data.Moisture2Min" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="Moisture2Max" id="Moisture2Max" class="form-control" placeholder="Moisture2Max" [(ngModel)]="data.Moisture2Max" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="Temperature1Min" id="Temperature1Min" class="form-control" placeholder="Temperature1Min" [(ngModel)]="data.Temperature1Min" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="Temperature1Max" id="Temperature1Max" class="form-control" placeholder="Temperature1Max" [(ngModel)]="data.Temperature1Max" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="MainSensor" id="MainSensor" class="form-control" placeholder="MainSensor" [(ngModel)]="data.MainSensor" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="Temperature2Max" id="Temperature2Max" class="form-control" placeholder="Temperature2Max" [(ngModel)]="data.Temperature2Max" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="Temperature2Min" id="Temperature2Min" class="form-control" placeholder="Temperature2Min" [(ngModel)]="data.Temperature2Min" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="Salinity1Max" id="Salinity1Max" class="form-control" placeholder="Salinity1Max" [(ngModel)]="data.Salinity1Max" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="Salinity1Min" id="Salinity1Min" class="form-control" placeholder="Salinity1Min" [(ngModel)]="data.Salinity1Min" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="Salinity2Max" id="Salinity2Max" class="form-control" placeholder="Salinity2Max" [(ngModel)]="data.Salinity2Max" />
+</mat-form-field>
+<mat-form-field class="full-width">
+<input type="number" matInput formControlName="Salinity2Min" id="Salinity2Min" class="form-control" placeholder="Salinity2Min" [(ngModel)]="data.Salinity2Min" />
+</mat-form-field>
+
+
+                <div fxLayoutGap="20px">
+                    <button mat-raised-button color="primary" type="submit" [disabled]="!Thresholdsform.valid">Save</button>
+                    <button mat-raised-button color="accent" type="button" tabindex="-1"
+                        [routerLink]="['/Thresholds']">Cancel</button>
+                </div>
+
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
